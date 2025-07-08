@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Internal storage -->
+    <files-path name="internal_files" path="." />
+    
+    <!-- Cache directory -->
+    <cache-path name="cache_files" path="." />
+    
+    <!-- External storage -->
     <external-path name="external_files" path="." />
-    <external-files-path name="external_files" path="." />
-    <cache-path name="cache" path="." />
+    
+    <!-- External cache -->
     <external-cache-path name="external_cache" path="." />
-    <files-path name="files" path="." />
+    
+    <!-- Generated UI files -->
+    <files-path name="generated_ui" path="generated/" />
+    
+    <!-- Exported projects -->
+    <external-path name="exported_projects" path="UIDesigner/" />
 </paths>

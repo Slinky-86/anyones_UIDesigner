@@ -1,20 +1,21 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp")
-    id("dagger.hilt.android.plugin")
+    id("org.jetbrains.kotlin.plugin.compose")
     id("kotlin-parcelize")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
     id("kotlinx-serialization")
 }
 
 android {
     namespace = "com.uidesigner.library"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
-        minSdk = 24
-        targetSdk = 34
-
+        minSdk = 26
+        targetSdk = 36
+        
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -27,15 +28,19 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            isMinifyEnabled = false
+        }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
         freeCompilerArgs += listOf(
             "-opt-in=androidx.compose.material.ExperimentalMaterialApi",
             "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
@@ -46,6 +51,7 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true
+        buildConfig = true
     }
 
     composeOptions {
@@ -60,60 +66,49 @@ android {
 }
 
 dependencies {
-    // Core Android with AppCompat
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 
-    // Compose BOM with Material2
-    implementation(platform("androidx.compose:compose-bom:2024.02.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material:material")
-    implementation("androidx.compose.material:material-icons-extended")
-    implementation("androidx.compose.foundation:foundation")
-    implementation("androidx.compose.animation:animation")
+    // Core Android
+    api("androidx.core:core-ktx:1.12.0")
+    api("androidx.appcompat:appcompat:1.6.1")
+    api("com.google.android.material:material:1.11.0")
+    api("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    // Compose BOM
+    api(platform("androidx.compose:compose-bom:2024.02.00"))
+    api("androidx.compose.ui:ui")
+    api("androidx.compose.ui:ui-graphics")
+    api("androidx.compose.ui:ui-tooling-preview")
+    api("androidx.compose.material:material")
+    api("androidx.compose.material:material-icons-extended")
+    api("androidx.compose.foundation:foundation")
+    api("androidx.compose.animation:animation")
     
     // Activity & Fragment
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation("androidx.fragment:fragment-ktx:1.6.2")
+    api("androidx.activity:activity-compose:1.8.2")
+    api("androidx.fragment:fragment-ktx:1.6.2")
     
     // Lifecycle
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+    api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    api("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    api("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
     
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.7.6")
+    api("androidx.navigation:navigation-compose:2.7.6")
     
-    // Hilt with KSP
-    implementation("com.google.dagger:hilt-android:2.48.1")
-    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
-    ksp("com.google.dagger:hilt-compiler:2.48.1")
+    // Hilt
+    api("com.google.dagger:hilt-android:2.48.1")
+    api("androidx.hilt:hilt-navigation-compose:1.1.0")
+    kapt("com.google.dagger:hilt-compiler:2.48.1")
     
-    // Drag and Drop & Gestures
+    // Additional Dependencies
     implementation("androidx.draganddrop:draganddrop:1.0.0")
-    implementation("androidx.compose.foundation:foundation")
-    
-    // Serialization & JSON
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
     implementation("com.google.code.gson:gson:2.10.1")
-    
-    // XML Processing
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-xml:0.86.2")
-    
-    // File System & Storage
     implementation("androidx.documentfile:documentfile:1.0.1")
-    
-    // Image Loading
     implementation("io.coil-kt:coil-compose:2.5.0")
-    
-    // Color Picker
     implementation("com.github.skydoves:colorpicker-compose:1.0.7")
-    
-    // Performance Monitoring
     implementation("androidx.compose.runtime:runtime-tracing:1.0.0-beta01")
     
     // Testing
