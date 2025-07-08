@@ -1,15 +1,12 @@
 # Consumer ProGuard rules for UIDesigner library
 
-# Keep all public API classes
--keep public class com.uidesigner.library.** { *; }
+# Keep public API classes
+-keep public class com.uidesigner.library.UIDesignerLibrary { *; }
+-keep public class com.uidesigner.library.UIDesignerConfig { *; }
+-keep public class com.uidesigner.library.UIDesignerTheme { *; }
+-keep public class com.uidesigner.library.model.** { *; }
 
-# Keep Hilt components
--keep class * extends dagger.hilt.android.AndroidEntryPoint
--keep class dagger.hilt.** { *; }
-
-# Keep Compose classes
--keep class androidx.compose.** { *; }
-
-# Keep serialization
--keep class kotlinx.serialization.** { *; }
--keep class com.uidesigner.library.**$$serializer { *; }
+# Keep Parcelable implementations
+-keep class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
