@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Shadow -->
+    <circle
+        android:cx="12.5"
+        android:cy="12.5"
+        android:r="6"
+        android:fillColor="@color/shadow_medium" />
+    <!-- FAB -->
+    <circle
+        android:cx="12"
+        android:cy="12"
+        android:r="6"
+        android:fillColor="@color/component_material" />
+    <!-- Plus icon -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M11,7h2v10h-2z" />
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M7,11h10v2H7z" />
+</vector>

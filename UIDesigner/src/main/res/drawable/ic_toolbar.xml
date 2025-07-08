@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <rect
+        android:width="20"
+        android:height="6"
+        android:x="2"
+        android:y="4"
+        android:fillColor="@color/component_material"
+        android:strokeColor="@color/component_border"
+        android:strokeWidth="1" />
+    <!-- Menu icon -->
+    <rect
+        android:width="2"
+        android:height="1"
+        android:x="4"
+        android:y="6"
+        android:fillColor="@color/white" />
+    <rect
+        android:width="2"
+        android:height="1"
+        android:x="4"
+        android:y="7"
+        android:fillColor="@color/white" />
+    <rect
+        android:width="2"
+        android:height="1"
+        android:x="4"
+        android:y="8"
+        android:fillColor="@color/white" />
+    <!-- Title -->
+    <rect
+        android:width="8"
+        android:height="1.5"
+        android:x="8"
+        android:y="6.75"
+        android:fillColor="@color/white" />
+    <!-- Action icons -->
+    <circle
+        android:cx="18"
+        android:cy="7"
+        android:r="1"
+        android:fillColor="@color/white" />
+    <circle
+        android:cx="20"
+        android:cy="7"
+        android:r="1"
+        android:fillColor="@color/white" />
+    <!-- Content area -->
+    <rect
+        android:width="20"
+        android:height="10"
+        android:x="2"
+        android:y="11"
+        android:fillColor="@color/component_material"
+        android:fillAlpha="0.1"
+        android:strokeColor="@color/component_border"
+        android:strokeWidth="1" />
+</vector>

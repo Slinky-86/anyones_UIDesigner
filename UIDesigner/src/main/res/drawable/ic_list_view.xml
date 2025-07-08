@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <rect
+        android:width="18"
+        android:height="14"
+        android:x="3"
+        android:y="5"
+        android:rx="2"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/component_collection"
+        android:strokeWidth="2" />
+    <!-- List items with bullets -->
+    <circle
+        android:cx="6"
+        android:cy="8"
+        android:r="1"
+        android:fillColor="@color/component_collection" />
+    <rect
+        android:width="10"
+        android:height="1.5"
+        android:x="8"
+        android:y="7.25"
+        android:fillColor="@color/component_collection"
+        android:fillAlpha="0.8" />
+    
+    <circle
+        android:cx="6"
+        android:cy="11"
+        android:r="1"
+        android:fillColor="@color/component_collection" />
+    <rect
+        android:width="10"
+        android:height="1.5"
+        android:x="8"
+        android:y="10.25"
+        android:fillColor="@color/component_collection"
+        android:fillAlpha="0.6" />
+    
+    <circle
+        android:cx="6"
+        android:cy="14"
+        android:r="1"
+        android:fillColor="@color/component_collection" />
+    <rect
+        android:width="10"
+        android:height="1.5"
+        android:x="8"
+        android:y="13.25"
+        android:fillColor="@color/component_collection"
+        android:fillAlpha="0.4" />
+    
+    <circle
+        android:cx="6"
+        android:cy="17"
+        android:r="1"
+        android:fillColor="@color/component_collection" />
+    <rect
+        android:width="10"
+        android:height="1.5"
+        android:x="8"
+        android:y="16.25"
+        android:fillColor="@color/component_collection"
+        android:fillAlpha="0.2" />
+</vector>

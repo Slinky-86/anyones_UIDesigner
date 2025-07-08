@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background circle with gradient -->
+    <path
+        android:pathData="M60,60m-58,0a58,58 0,1 1,116 0a58,58 0,1 1,-116 0"
+        android:fillColor="@color/designer_primary" />
+    
+    <path
+        android:pathData="M60,60m-58,0a58,58 0,1 1,116 0a58,58 0,1 1,-116 0"
+        android:strokeColor="@color/designer_accent"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Main design canvas representation -->
+    <group android:name="canvas">
+        <!-- Canvas background -->
+        <rect
+            android:width="64"
+            android:height="64"
+            android:x="28"
+            android:y="28"
+            android:rx="4"
+            android:fillColor="@color/white"
+            android:fillAlpha="0.95" />
+        
+        <!-- Canvas border -->
+        <rect
+            android:width="64"
+            android:height="64"
+            android:x="28"
+            android:y="28"
+            android:rx="4"
+            android:strokeColor="@color/designer_accent"
+            android:strokeWidth="1.5"
+            android:fillColor="@android:color/transparent" />
+    </group>
+
+    <!-- Grid system -->
+    <group android:name="grid" android:alpha="0.4">
+        <!-- Vertical grid lines -->
+        <path
+            android:strokeColor="@color/designer_accent"
+            android:strokeWidth="0.8"
+            android:pathData="M36,28 L36,92 M44,28 L44,92 M52,28 L52,92 M60,28 L60,92 M68,28 L68,92 M76,28 L76,92 M84,28 L84,92" />
+        <!-- Horizontal grid lines -->
+        <path
+            android:strokeColor="@color/designer_accent"
+            android:strokeWidth="0.8"
+            android:pathData="M28,36 L92,36 M28,44 L92,44 M28,52 L92,52 M28,60 L92,60 M28,68 L92,68 M28,76 L92,76 M28,84 L92,84" />
+    </group>
+
+    <!-- UI Components representation -->
+    <group android:name="components">
+        <!-- Button component -->
+        <rect
+            android:width="20"
+            android:height="8"
+            android:x="34"
+            android:y="36"
+            android:rx="4"
+            android:fillColor="@color/designer_primary" />
+        
+        <!-- Text components -->
+        <rect
+            android:width="24"
+            android:height="3"
+            android:x="34"
+            android:y="48"
+            android:rx="1.5"
+            android:fillColor="@color/designer_secondary" />
+        <rect
+            android:width="18"
+            android:height="3"
+            android:x="34"
+            android:y="54"
+            android:rx="1.5"
+            android:fillColor="@color/designer_secondary"
+            android:fillAlpha="0.7" />
+        
+        <!-- Image component -->
+        <rect
+            android:width="16"
+            android:height="16"
+            android:x="62"
+            android:y="36"
+            android:rx="2"
+            android:fillColor="@color/designer_accent"
+            android:fillAlpha="0.6" />
+        
+        <!-- Input field -->
+        <rect
+            android:width="28"
+            android:height="6"
+            android:x="34"
+            android:y="62"
+            android:rx="3"
+            android:strokeColor="@color/designer_primary"
+            android:strokeWidth="1"
+            android:fillColor="@color/white" />
+        
+        <!-- Layout container -->
+        <rect
+            android:width="32"
+            android:height="18"
+            android:x="34"
+            android:y="72"
+            android:rx="2"
+            android:strokeColor="@color/designer_primary"
+            android:strokeWidth="1.5"
+            android:strokeDasharray="3,2"
+            android:fillColor="@android:color/transparent" />
+    </group>
+
+    <!-- Design tools overlay -->
+    <group android:name="tools">
+        <!-- Selection handles -->
+        <circle
+            android:cx="34"
+            android:cy="36"
+            android:r="2.5"
+            android:fillColor="@color/white"
+            android:strokeColor="@color/designer_primary"
+            android:strokeWidth="1.5" />
+        <circle
+            android:cx="54"
+            android:cy="36"
+            android:r="2.5"
+            android:fillColor="@color/white"
+            android:strokeColor="@color/designer_primary"
+            android:strokeWidth="1.5" />
+        <circle
+            android:cx="54"
+            android:cy="44"
+            android:r="2.5"
+            android:fillColor="@color/white"
+            android:strokeColor="@color/designer_primary"
+            android:strokeWidth="1.5" />
+        <circle
+            android:cx="34"
+            android:cy="44"
+            android:r="2.5"
+            android:fillColor="@color/white"
+            android:strokeColor="@color/designer_primary"
+            android:strokeWidth="1.5" />
+        
+        <!-- Alignment guides -->
+        <path
+            android:strokeColor="@color/error"
+            android:strokeWidth="1.5"
+            android:strokeDasharray="3,2"
+            android:pathData="M44,28 L44,56" />
+        <path
+            android:strokeColor="@color/error"
+            android:strokeWidth="1.5"
+            android:strokeDasharray="3,2"
+            android:pathData="M28,40 L66,40" />
+    </group>
+
+    <!-- Cursor/pointer indicating interaction -->
+    <group android:name="cursor">
+        <path
+            android:fillColor="@color/white"
+            android:strokeColor="@color/black"
+            android:strokeWidth="1"
+            android:pathData="M18,18 L18,32 L24,28 L30,34 L36,28 L26,18 Z" />
+        <!-- Cursor shadow -->
+        <path
+            android:fillColor="#33000000"
+            android:pathData="M19,19 L19,33 L25,29 L31,35 L37,29 L27,19 Z" />
+    </group>
+
+    <!-- Floating elements for dynamism -->
+    <group android:name="floating_elements" android:alpha="0.6">
+        <!-- Floating component icons -->
+        <circle
+            android:cx="20"
+            android:cy="70"
+            android:r="3"
+            android:fillColor="@color/designer_secondary" />
+        <rect
+            android:width="4"
+            android:height="4"
+            android:x="96"
+            android:y="50"
+            android:rx="2"
+            android:fillColor="@color/designer_accent" />
+        <path
+            android:fillColor="@color/designer_primary"
+            android:pathData="M100,20 L106,26 L100,32 L94,26 Z" />
+    </group>
+
+    <!-- Subtle highlight effects -->
+    <group android:name="highlights" android:alpha="0.3">
+        <path
+            android:pathData="M60,60m-58,0a58,58 0,0 1,58 -58a58,58 0,0 1,58 58"
+            android:strokeColor="@color/white"
+            android:strokeWidth="2"
+            android:fillColor="@android:color/transparent" />
+    </group>
+
+</vector>

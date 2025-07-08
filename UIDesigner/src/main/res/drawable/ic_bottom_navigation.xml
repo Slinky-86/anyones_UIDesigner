@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <rect
+        android:width="20"
+        android:height="6"
+        android:x="2"
+        android:y="16"
+        android:fillColor="@color/component_navigation"
+        android:strokeColor="@color/component_border"
+        android:strokeWidth="1" />
+    <!-- Navigation items -->
+    <circle
+        android:cx="6"
+        android:cy="19"
+        android:r="1.5"
+        android:fillColor="@color/designer_primary" />
+    <circle
+        android:cx="12"
+        android:cy="19"
+        android:r="1.5"
+        android:fillColor="@color/white"
+        android:fillAlpha="0.6" />
+    <circle
+        android:cx="18"
+        android:cy="19"
+        android:r="1.5"
+        android:fillColor="@color/white"
+        android:fillAlpha="0.6" />
+    <!-- Content area -->
+    <rect
+        android:width="20"
+        android:height="12"
+        android:x="2"
+        android:y="4"
+        android:fillColor="@color/component_navigation"
+        android:fillAlpha="0.1"
+        android:strokeColor="@color/component_border"
+        android:strokeWidth="1" />
+</vector>

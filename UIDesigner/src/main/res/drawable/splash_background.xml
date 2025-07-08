@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="@color/splash_background"
+                android:centerColor="#1A1A1A"
+                android:endColor="@color/splash_surface" />
+        </shape>
+    </item>
+    
+    <!-- Subtle pattern overlay -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.3"
+                android:centerY="0.7"
+                android:gradientRadius="800dp"
+                android:startColor="#10007ACC"
+                android:endColor="@android:color/transparent" />
+        </shape>
+    </item>
+    
+    <!-- Main content container -->
+    <item android:gravity="center">
+        <layer-list>
+            <!-- Logo container with subtle glow -->
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <size
+                        android:width="160dp"
+                        android:height="160dp" />
+                    <gradient
+                        android:type="radial"
+                        android:gradientRadius="80dp"
+                        android:startColor="#20007ACC"
+                        android:endColor="@android:color/transparent" />
+                </shape>
+            </item>
+            
+            <!-- Logo background circle -->
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <size
+                        android:width="@dimen/splash_logo_size"
+                        android:height="@dimen/splash_logo_size" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="135"
+                        android:startColor="@color/designer_primary"
+                        android:endColor="@color/designer_primary_variant" />
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/designer_accent" />
+                </shape>
+            </item>
+            
+            <!-- Custom UI Designer Logo -->
+            <item android:gravity="center">
+                <vector
+                    android:width="72dp"
+                    android:height="72dp"
+                    android:viewportWidth="72"
+                    android:viewportHeight="72">
+                    
+                    <!-- Background elements representing design canvas -->
+                    <path
+                        android:fillColor="@color/white"
+                        android:fillAlpha="0.9"
+                        android:pathData="M12,12 L60,12 L60,60 L12,60 Z"
+                        android:strokeWidth="1.5"
+                        android:strokeColor="@color/designer_accent" />
+                    
+                    <!-- Grid pattern -->
+                    <group android:name="grid">
+                        <path
+                            android:strokeColor="@color/designer_accent"
+                            android:strokeWidth="0.5"
+                            android:strokeAlpha="0.3"
+                            android:pathData="M20,12 L20,60 M28,12 L28,60 M36,12 L36,60 M44,12 L44,60 M52,12 L52,60" />
+                        <path
+                            android:strokeColor="@color/designer_accent"
+                            android:strokeWidth="0.5"
+                            android:strokeAlpha="0.3"
+                            android:pathData="M12,20 L60,20 M12,28 L60,28 M12,36 L60,36 M12,44 L60,44 M12,52 L60,52" />
+                    </group>
+                    
+                    <!-- Component representations -->
+                    <group android:name="components">
+                        <!-- Button component -->
+                        <rect
+                            android:width="16"
+                            android:height="6"
+                            android:x="16"
+                            android:y="18"
+                            android:rx="3"
+                            android:fillColor="@color/designer_primary" />
+                        
+                        <!-- Text component -->
+                        <rect
+                            android:width="20"
+                            android:height="2"
+                            android:x="16"
+                            android:y="28"
+                            android:rx="1"
+                            android:fillColor="@color/designer_secondary" />
+                        <rect
+                            android:width="14"
+                            android:height="2"
+                            android:x="16"
+                            android:y="32"
+                            android:rx="1"
+                            android:fillColor="@color/designer_secondary"
+                            android:fillAlpha="0.7" />
+                        
+                        <!-- Image component -->
+                        <rect
+                            android:width="12"
+                            android:height="12"
+                            android:x="40"
+                            android:y="18"
+                            android:rx="2"
+                            android:fillColor="@color/designer_accent"
+                            android:fillAlpha="0.6" />
+                        
+                        <!-- Layout container -->
+                        <rect
+                            android:width="24"
+                            android:height="16"
+                            android:x="16"
+                            android:y="40"
+                            android:rx="2"
+                            android:strokeColor="@color/designer_primary"
+                            android:strokeWidth="1.5"
+                            android:fillColor="@android:color/transparent" />
+                    </group>
+                    
+                    <!-- Design tools overlay -->
+                    <group android:name="tools">
+                        <!-- Selection handles -->
+                        <circle
+                            android:cx="16"
+                            android:cy="18"
+                            android:r="2"
+                            android:fillColor="@color/white"
+                            android:strokeColor="@color/designer_primary"
+                            android:strokeWidth="1" />
+                        <circle
+                            android:cx="32"
+                            android:cy="18"
+                            android:r="2"
+                            android:fillColor="@color/white"
+                            android:strokeColor="@color/designer_primary"
+                            android:strokeWidth="1" />
+                        
+                        <!-- Alignment guide -->
+                        <path
+                            android:strokeColor="@color/error"
+                            android:strokeWidth="1"
+                            android:strokeDasharray="2,2"
+                            android:pathData="M24,12 L24,32" />
+                    </group>
+                    
+                    <!-- Cursor/pointer indicating interaction -->
+                    <group android:name="cursor">
+                        <path
+                            android:fillColor="@color/white"
+                            android:strokeColor="@color/black"
+                            android:strokeWidth="0.5"
+                            android:pathData="M8,8 L8,20 L12,16 L16,20 L20,16 L12,8 Z" />
+                    </group>
+                </vector>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>

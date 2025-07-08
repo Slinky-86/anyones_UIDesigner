@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <rect
+        android:width="16"
+        android:height="12"
+        android:x="4"
+        android:y="6"
+        android:rx="2"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/component_custom"
+        android:strokeWidth="2"
+        android:strokeDasharray="3,3" />
+    <!-- Code brackets -->
+    <path
+        android:strokeColor="@color/component_custom"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M8,9 L6,12 L8,15" />
+    <path
+        android:strokeColor="@color/component_custom"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M16,9 L18,12 L16,15" />
+    <!-- Custom indicator -->
+    <circle
+        android:cx="12"
+        android:cy="12"
+        android:r="2"
+        android:fillColor="@color/component_custom"
+        android:fillAlpha="0.6" />
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M11,11h2v2h-2z" />
+</vector>

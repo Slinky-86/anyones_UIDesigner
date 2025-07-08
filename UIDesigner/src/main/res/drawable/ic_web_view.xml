@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <rect
+        android:width="18"
+        android:height="14"
+        android:x="3"
+        android:y="5"
+        android:rx="2"
+        android:fillColor="@color/component_advanced"
+        android:strokeColor="@color/component_border"
+        android:strokeWidth="1" />
+    <!-- Browser chrome -->
+    <rect
+        android:width="18"
+        android:height="3"
+        android:x="3"
+        android:y="5"
+        android:fillColor="@color/component_advanced"
+        android:fillAlpha="0.8" />
+    <!-- Navigation buttons -->
+    <circle
+        android:cx="6"
+        android:cy="6.5"
+        android:r="0.5"
+        android:fillColor="@color/white" />
+    <circle
+        android:cx="8"
+        android:cy="6.5"
+        android:r="0.5"
+        android:fillColor="@color/white" />
+    <circle
+        android:cx="10"
+        android:cy="6.5"
+        android:r="0.5"
+        android:fillColor="@color/white" />
+    <!-- URL bar -->
+    <rect
+        android:width="8"
+        android:height="1"
+        android:x="12"
+        android:y="6"
+        android:fillColor="@color/white"
+        android:fillAlpha="0.8" />
+    <!-- Web content -->
+    <rect
+        android:width="14"
+        android:height="2"
+        android:x="5"
+        android:y="10"
+        android:fillColor="@color/white"
+        android:fillAlpha="0.6" />
+    <rect
+        android:width="10"
+        android:height="2"
+        android:x="5"
+        android:y="13"
+        android:fillColor="@color/white"
+        android:fillAlpha="0.4" />
+    <rect
+        android:width="12"
+        android:height="2"
+        android:x="5"
+        android:y="16"
+        android:fillColor="@color/white"
+        android:fillAlpha="0.3" />
+</vector>

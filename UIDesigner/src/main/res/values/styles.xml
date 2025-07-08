@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Base UI Designer Theme -->
+    <style name="Theme.UIDesigner" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/designer_primary</item>
+        <item name="colorPrimaryVariant">@color/designer_primary_variant</item>
+        <item name="colorSecondary">@color/designer_secondary</item>
+        <item name="colorSecondaryVariant">@color/designer_secondary_variant</item>
+        <item name="android:colorBackground">@color/vs_code_dark_bg</item>
+        <item name="colorSurface">@color/vs_code_dark_surface</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/vs_code_light_text</item>
+        <item name="colorOnSurface">@color/vs_code_light_text</item>
+        <item name="android:windowBackground">@color/vs_code_dark_bg</item>
+        <item name="android:statusBarColor">@color/vs_code_dark_bg</item>
+        <item name="android:navigationBarColor">@color/vs_code_dark_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    
+    <!-- Splash Screen Theme -->
+    <style name="Theme.UIDesigner.Splash" parent="Theme.UIDesigner">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+    </style>
+    
+    <!-- VS Code Light Theme -->
+    <style name="Theme.UIDesigner.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/vs_code_blue</item>
+        <item name="colorPrimaryVariant">@color/vs_code_blue_dark</item>
+        <item name="colorSecondary">@color/vs_code_orange</item>
+        <item name="colorSecondaryVariant">@color/vs_code_orange_dark</item>
+        <item name="android:colorBackground">@color/vs_code_light_bg</item>
+        <item name="colorSurface">@color/vs_code_light_surface</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/vs_code_dark_text</item>
+        <item name="colorOnSurface">@color/vs_code_dark_text</item>
+        <item name="android:windowBackground">@color/vs_code_light_bg</item>
+        <item name="android:statusBarColor">@color/vs_code_light_bg</item>
+        <item name="android:navigationBarColor">@color/vs_code_light_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    
+    <!-- Component Palette Styles -->
+    <style name="ComponentPaletteStyle">
+        <item name="android:background">@color/panel_background</item>
+        <item name="android:elevation">@dimen/elevation_card</item>
+        <item name="paletteBackground">@color/panel_background</item>
+        <item name="categoryHeaderColor">@color/panel_title</item>
+        <item name="componentItemColor">@color/component_background</item>
+        <item name="componentIconTint">@color/designer_accent</item>
+        <item name="showComponentIcons">true</item>
+        <item name="iconSize">@dimen/component_icon_size</item>
+        <item name="itemHeight">@dimen/component_item_height</item>
+    </style>
+    
+    <!-- Design Canvas Styles -->
+    <style name="DesignCanvasStyle">
+        <item name="canvasBackground">@color/canvas_background</item>
+        <item name="gridColor">@color/canvas_grid</item>
+        <item name="gridMajorColor">@color/canvas_grid_major</item>
+        <item name="guideColor">@color/canvas_guide</item>
+        <item name="selectionColor">@color/canvas_selection</item>
+        <item name="selectionFillColor">@color/canvas_selection_fill</item>
+        <item name="handleColor">@color/selection_handle</item>
+        <item name="handleBorderColor">@color/selection_handle_border</item>
+        <item name="dropZoneActiveColor">@color/canvas_drop_zone_active</item>
+        <item name="dropZoneInvalidColor">@color/canvas_drop_zone_invalid</item>
+        <item name="showRulers">true</item>
+        <item name="gridPattern">@drawable/grid_pattern</item>
+    </style>
+    
+    <!-- Properties Panel Styles -->
+    <style name="PropertiesPanelStyle">
+        <item name="panelBackground">@color/panel_background</item>
+        <item name="sectionHeaderColor">@color/property_section_header</item>
+        <item name="sectionHeaderBackground">@color/property_section</item>
+        <item name="propertyLabelColor">@color/property_label</item>
+        <item name="propertyValueColor">@color/property_value</item>
+        <item name="propertyInputBackground">@color/property_input_background</item>
+        <item name="propertyInputBorder">@color/property_input_border</item>
+        <item name="propertyInputFocus">@color/property_input_focus</item>
+        <item name="tabIndicatorColor">@color/designer_primary</item>
+        <item name="showPropertyIcons">true</item>
+        <item name="propertyIconSize">@dimen/icon_size_small</item>
+    </style>
+    
+    <!-- Component Hierarchy Styles -->
+    <style name="ComponentHierarchyStyle">
+        <item name="hierarchyBackground">@color/panel_background</item>
+        <item name="treeLineColor">@color/hierarchy_tree_line</item>
+        <item name="selectedItemColor">@color/hierarchy_selected</item>
+        <item name="hoverItemColor">@color/hierarchy_hover</item>
+        <item name="lockedItemColor">@color/hierarchy_locked</item>
+        <item name="hiddenItemColor">@color/hierarchy_hidden</item>
+        <item name="expandIconColor">@color/hierarchy_expand_icon</item>
+        <item name="componentIconColor">@color/designer_accent</item>
+        <item name="indentSize">@dimen/spacing_medium</item>
+        <item name="itemHeight">@dimen/list_item_height_small</item>
+        <item name="showTreeLines">true</item>
+        <item name="showComponentIcons">true</item>
+        <item name="showComponentTypes">true</item>
+        <item name="enableDragReorder">true</item>
+    </style>
+    
+    <!-- Toolbar Styles -->
+    <style name="UIDesignerToolbarStyle">
+        <item name="toolbarBackground">@color/toolbar_background</item>
+        <item name="toolbarIconColor">@color/toolbar_button</item>
+        <item name="toolbarButtonHover">@color/toolbar_button_hover</item>
+        <item name="toolbarButtonPressed">@color/toolbar_button_pressed</item>
+        <item name="toolbarButtonDisabled">@color/toolbar_button_disabled</item>
+        <item name="separatorColor">@color/toolbar_separator</item>
+        <item name="showLabels">false</item>
+        <item name="buttonSize">@dimen/toolbar_button_size</item>
+        <item name="buttonSpacing">@dimen/toolbar_button_margin</item>
+        <item name="separatorWidth">@dimen/toolbar_separator_width</item>
+    </style>
+    
+    <!-- Drag and Drop Styles -->
+    <style name="DragDropSystemStyle">
+        <item name="dragShadowDrawable">@drawable/drag_shadow</item>
+        <item name="dragShadowColor">@color/drag_shadow</item>
+        <item name="dragShadowElevation">@dimen/drag_shadow_elevation</item>
+        <item name="dragShadowCornerRadius">@dimen/drag_shadow_corner_radius</item>
+        <item name="dropTargetActiveDrawable">@drawable/drop_target_active</item>
+        <item name="dropTargetInactiveDrawable">@drawable/drop_target_inactive</item>
+        <item name="dropFeedbackSuccessColor">@color/drop_feedback_success</item>
+        <item name="dropFeedbackErrorColor">@color/drop_feedback_error</item>
+        <item name="dropFeedbackSize">@dimen/drop_feedback_size</item>
+        <item name="dropZonePadding">@dimen/drop_zone_padding</item>
+        <item name="enableDropPreview">true</item>
+        <item name="enableDropAnimation">true</item>
+        <item name="dropAnimationDuration">300</item>
+    </style>
+    
+    <!-- Button Styles -->
+    <style name="UIDesigner.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingStart">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+        <item name="android:elevation">@dimen/elevation_button</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    
+    <style name="UIDesigner.Button.Primary">
+        <item name="android:backgroundTint">@color/designer_primary</item>
+    </style>
+    
+    <style name="UIDesigner.Button.Secondary">
+        <item name="android:backgroundTint">@color/designer_secondary</item>
+    </style>
+    
+    <style name="UIDesigner.IconButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/icon_button_background</item>
+        <item name="android:layout_width">@dimen/icon_button_size</item>
+        <item name="android:layout_height">@dimen/icon_button_size</item>
+        <item name="android:padding">@dimen/icon_button_padding</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/toolbar_button</item>
+    </style>
+    
+    <!-- Text Styles -->
+    <style name="UIDesigner.Text">
+        <item name="android:textColor">@color/vs_code_light_text</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="UIDesigner.Text.Display">
+        <item name="android:textSize">@dimen/text_size_display</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    
+    <style name="UIDesigner.Text.Headline">
+        <item name="android:textSize">@dimen/text_size_headline</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="UIDesigner.Text.Title">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="UIDesigner.Text.Body">
+        <item name="android:textSize">@dimen/text_size_body</item>
+    </style>
+    
+    <style name="UIDesigner.Text.Label">
+        <item name="android:textSize">@dimen/text_size_label</item>
+        <item name="android:textColor">@color/property_label</item>
+    </style>
+    
+    <style name="UIDesigner.Text.Caption">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textColor">@color/vs_code_accent_text</item>
+    </style>
+    
+    <!-- Card Styles -->
+    <style name="UIDesigner.Card" parent="Widget.AppCompat.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/component_surface</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+    </style>
+    
+    <!-- Input Field Styles -->
+    <style name="UIDesigner.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/property_label</item>
+        <item name="boxBackgroundColor">@color/property_input_background</item>
+        <item name="boxStrokeColor">@color/property_input_border</item>
+        <item name="boxStrokeColorStateList">@color/text_input_box_stroke</item>
+        <item name="hintTextColor">@color/property_label</item>
+        <item name="boxCornerRadiusTopStart">@dimen/text_field_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/text_field_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/text_field_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/text_field_corner_radius</item>
+    </style>
+    
+    <style name="UIDesigner.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/property_value</item>
+        <item name="android:textColorHint">@color/placeholder</item>
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:padding">@dimen/text_field_padding</item>
+        <item name="android:minHeight">@dimen/text_field_min_height</item>
+    </style>
+    
+    <!-- Component Item Styles -->
+    <style name="ComponentItemStyle">
+        <item name="android:layout_height">@dimen/component_item_height</item>
+        <item name="android:padding">@dimen/component_item_padding</item>
+        <item name="android:background">@drawable/component_item_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="itemBackground">@color/component_background</item>
+        <item name="itemHoverColor">@color/component_hover</item>
+        <item name="itemSelectedColor">@color/component_selected</item>
+        <item name="componentIcon">@drawable/ic_custom_view</item>
+        <item name="isDraggable">true</item>
+        <item name="isEnabled">true</item>
+        <item name="showDescription">true</item>
+    </style>
+    
+    <!-- Animation Styles -->
+    <style name="UIDesignerAnimationStyle">
+        <item name="animationDuration">300</item>
+        <item name="animationInterpolator">accelerate_decelerate</item>
+        <item name="enableTransitions">true</item>
+        <item name="enableMicroAnimations">true</item>
+        <item name="enableSelectionAnimations">true</item>
+        <item name="enableDragAnimations">true</item>
+        <item name="fadeInDuration">200</item>
+        <item name="fadeOutDuration">150</item>
+        <item name="scaleAnimationDuration">200</item>
+        <item name="slideAnimationDuration">300</item>
+    </style>
+    
+    <!-- Status Bar Style -->
+    <style name="StatusBarStyle">
+        <item name="statusBackground">@color/panel_background</item>
+        <item name="statusTextColor">@color/vs_code_light_text</item>
+        <item name="statusHeight">@dimen/status_bar_height</item>
+        <item name="statusPadding">@dimen/spacing_small</item>
+        <item name="showComponentCount">true</item>
+        <item name="showZoomLevel">true</item>
+        <item name="showCanvasSize">true</item>
+        <item name="showMemoryUsage">false</item>
+        <item name="statusIconSize">@dimen/icon_size_small</item>
+        <item name="statusTextSize">@dimen/text_size_caption</item>
+    </style>
+    
+</resources>
