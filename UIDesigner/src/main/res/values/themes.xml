@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UIDesigner" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/vs_code_blue</item>
+        <item name="colorPrimaryVariant">@color/vs_code_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/vs_code_orange</item>
+        <item name="colorSecondaryVariant">@color/vs_code_orange_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/vs_code_dark_bg</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/vs_code_dark_bg</item>
+        <item name="colorSurface">@color/vs_code_dark_surface</item>
+        <item name="colorOnSurface">@color/vs_code_light_text</item>
+    </style>
+    
+    <style name="Theme.UIDesigner.Light" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/vs_code_blue</item>
+        <item name="colorPrimaryVariant">@color/vs_code_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/vs_code_orange</item>
+        <item name="colorSecondaryVariant">@color/vs_code_orange_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/vs_code_light_bg</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/vs_code_light_bg</item>
+        <item name="colorSurface">@color/vs_code_light_surface</item>
+        <item name="colorOnSurface">@color/vs_code_dark_text</item>
+    </style>
+</resources>

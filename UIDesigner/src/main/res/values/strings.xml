@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UI Designer</string>
+    <string name="component_palette">Component Palette</string>
+    <string name="properties_panel">Properties</string>
+    <string name="design_canvas">Design Canvas</string>
+    <string name="generate_xml">Generate XML</string>
+    <string name="clear_canvas">Clear Canvas</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="close">Close</string>
+    <string name="select_component">Select a component to edit its properties</string>
+    <string name="layout_properties">Layout</string>
+    <string name="attribute_properties">Attributes</string>
+    <string name="common_properties">Common</string>
+</resources>
